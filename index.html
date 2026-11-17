@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090909">
+<title>For My Champion — Abhi</title>
+<style>
+:root{--bg:#090909;--panel:#15130f;--gold:#d7b56d;--pale:#f3ead8;--muted:#c9c0b1}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--pale);font-family:Georgia,'Times New Roman',serif;line-height:1.75}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.2;background-image:radial-gradient(#d7b56d 0.7px,transparent .7px);background-size:34px 34px;z-index:-1}
+button{font:inherit}
+.wrap{width:min(900px,92%);margin:auto}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:60px 20px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 72%,#302311 0%,#14100b 28%,#090909 70%)}
+.hero:after{content:"";position:absolute;left:8%;right:8%;bottom:11%;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.55}
+.kicker{color:var(--gold);letter-spacing:.34em;text-transform:uppercase;font:600 .72rem Arial,sans-serif}
+h1{font-size:clamp(3.1rem,10vw,7rem);line-height:.98;margin:24px 0 12px;letter-spacing:.035em;color:var(--gold);font-weight:400;text-shadow:0 0 35px #bd914b35}
+.hero h2{font-size:clamp(1.1rem,3vw,1.65rem);font-weight:400;letter-spacing:.13em;margin:0 0 24px}
+.hero p{max-width:560px;color:var(--muted);margin:0 auto 32px}
+.gold{color:var(--gold)}
+.btn{border:1px solid var(--gold);background:linear-gradient(135deg,#d7b56d,#9e7839);color:#100d08;padding:14px 25px;border-radius:3px;letter-spacing:.08em;text-transform:uppercase;font:700 .75rem Arial,sans-serif;cursor:pointer;box-shadow:0 8px 28px #d7b56d22;transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 34px #d7b56d35}
+main{padding-bottom:70px}
+section{padding:76px 0;border-bottom:1px solid #ffffff14}
+.eyebrow{font:600 .7rem Arial,sans-serif;letter-spacing:.27em;color:var(--gold);text-transform:uppercase;text-align:center}
+h3{font-size:clamp(1.9rem,5vw,3.2rem);line-height:1.15;font-weight:400;text-align:center;margin:12px 0 28px}
+.intro{max-width:680px;margin:0 auto;text-align:center;color:var(--muted);font-size:1.08rem}
+.number{font: .8rem Arial,sans-serif;color:var(--gold);letter-spacing:.2em}
+.letter{max-width:720px;margin:30px auto 0;background:linear-gradient(145deg,#191610,#100f0d);border:1px solid #a9874b55;padding:clamp(24px,6vw,55px);box-shadow:0 20px 70px #0008}
+.letter p{color:#e6dece;margin:0 0 18px}
+.signature{font-style:italic;color:var(--gold);font-size:1.35rem;margin-top:28px}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:34px}
+.card{border:1px solid #a9874b55;background:#11100e;padding:22px}
+.card b{display:block;color:var(--gold);font-weight:400;font-size:1.1rem;margin-bottom:7px}
+.card p{margin:0;color:var(--muted);font-size:.96rem}
+.final{background:radial-gradient(ellipse at 50% 40%,#342714 0%,#11100d 42%,#090909 80%);text-align:center;padding:90px 20px}
+.final h3{color:var(--gold);font-size:clamp(2.4rem,8vw,5rem);margin:18px 0}
+.final p{max-width:570px;margin:0 auto 24px;color:var(--muted)}
+.small{font: .72rem Arial,sans-serif;letter-spacing:.12em;color:#9b907e;text-transform:uppercase}
+.hidden{display:none}
+.reveal{animation:rise .8s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:600px){.cards{grid-template-columns:1fr}.hero{min-height:92svh}section{padding:58px 0}.letter{padding:24px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">A little something, just for you</div>
+    <h1>ABHI.</h1>
+    <h2>MY CHAMPION <span class="gold">♡</span></h2>
+    <p>Three years of hard work. Countless sacrifices. And a heart that refuses to give up.</p>
+    <button class="btn" id="openBtn">Open your surprise</button>
+    <p class="small" style="margin-top:22px">Made with love, just for you</p>
+  </div>
+</header>
+
+<main id="surprise" class="hidden">
+  <section>
+    <div class="wrap">
+      <div class="eyebrow">01 · Three years</div>
+      <h3>Look how far you've come.</h3>
+      <p class="intro">Three whole years, Abhi. Three years of showing up, training, pushing yourself, making sacrifices and choosing your dream again and again.</p>
+      <p class="intro" style="margin-top:18px">I know it hasn't always been easy. I know you've given up so many things and put so much of yourself into this. I hope you know that your effort does not go unnoticed. I see how hard you've worked, and I admire you for it.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="eyebrow">02 · A letter from me</div>
+      <h3>Before you step onto that field…</h3>
+      <article class="letter">
+        <p>My dearest Abhi,</p>
+        <p>I honestly don't even know where to begin, because I wish I could make you understand just how proud I am of you.</p>
+        <p>I know how hard you've worked for this. Three years of training, effort, discipline and sacrifices. You've put so much time and energy into something that matters to you, and I hope you give yourself credit for making it this far.</p>
+        <p>And even though I wasn't there beside you through all those three years, these past one and a half months have helped me get to know so much about you and the hard work behind this dream. I honestly haven't seen anyone this dedicated to their goals before. In just this little time, I've come to understand how much those three years have meant to you, how much you've worked, and how many things you've sacrificed. I am SO, SO proud of you, Abhi.</p>
+        <p>And there's one thing I love the most about you: <span class="gold">you never give up on something easily.</span> Even when things get difficult, you keep trying. That determination in you is something I genuinely admire, and I hope you never lose it.</p>
+        <p>Trust your training. Trust the work you've put in. Take a breath, focus on your moment and give every attempt your absolute best. Don't hold yourself back because you're scared of what the result might be. You've earned the chance to be there, so go out and enjoy it.</p>
+        <p>And please remember this: whether you win or lose, whether you come back with a medal or without one, <span class="gold">I'll be proud of you either way.</span> Nothing about one result can erase three years of effort. A competition doesn't define your worth, your talent or the person you are.</p>
+        <p>I don't need you to prove anything to me. I just want you to give it your best, make yourself proud and come away knowing you gave it everything you had.</p>
+        <p>Go make that moment yours, my champion. I'll be cheering for you all the way.</p>
+        <p class="signature">All my love,<br>Your biggest supporter ♡</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="eyebrow">03 · What I admire about you</div>
+      <h3>It's not just about the athlete.</h3>
+      <p class="intro">These are a few things I hope you never forget about yourself.</p>
+      <div class="cards">
+        <div class="card"><b>Your determination</b><p>You don't give up easily. You keep going, even when the road gets tough.</p></div>
+        <div class="card"><b>Your dedication</b><p>Three years of commitment say more than words ever could.</p></div>
+        <div class="card"><b>Your courage</b><p>You keep showing up and giving yourself another chance to do your best.</p></div>
+        <div class="card"><b>The person you are</b><p>You're so much more than a result, a medal or a competition.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="eyebrow">04 · A little reminder</div>
+      <h3>Win or lose. You're still my champion.</h3>
+      <p class="intro">Don't forget to breathe. Don't forget to enjoy it. Don't forget how much work has brought you here. One competition is one moment in a much bigger journey.</p>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="eyebrow">05 · Your moment</div>
+    <h3>GO FLY,<br>CHAMPION.</h3>
+    <p>Trust yourself. Give it your best. And whatever happens, remember that someone is already so, so proud of you.</p>
+    <div class="kicker">Always in your corner · ♡</div>
+  </section>
+</main>
+<script>
+const openBtn=document.getElementById('openBtn');
+const surprise=document.getElementById('surprise');
+openBtn.addEventListener('click',()=>{
+  surprise.classList.remove('hidden');
+  surprise.classList.add('reveal');
+  openBtn.textContent='Your surprise is open ♡';
+  openBtn.disabled=true;
+  document.getElementById('surprise').scrollIntoView({behavior:'smooth'});
+});
+</script>
+</body>
+</html>
